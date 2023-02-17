@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  
+}
+
+html, body  {
+  background-color: whitesmoke;
+}
+
+nav {
+  display: flex;
+  justify-content:space-evenly;
+  position: sticky;
+  top: 0;
+  background-color: red;
+  width: 100%;
+}
+
+.leftcontent, .ContentNav1 {
+  display: inline-block;   
+  padding: 10px;
+  list-style: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.rightcontent .rightContentList {
+    display: inline-block;
+    font-weight: bolder;
+    color: white;
+}
+.rightcontent .navButton {
+    border: 1px solid;
+    border-radius: 40px;
+    font-size: 15px;
+    margin: 10px;
+    padding: 10px;
+    color:white;
+    text-transform: capitalize;  
+}
+
+.navButton {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.navButton:hover, .navButton:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: black;
+}
+
+.navButton:active {
+  opacity: .5;
+}
+
+nav .ContentNav1:hover, li:hover{
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.intro img {
+  height: 540px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+}
+
+.intro h1 {
+  position: absolute;
+  top: 13cm;
+  left: 50px;
+  color: white;
+}
+
+h2 {
+  font-size: 40px; text-transform: uppercase; text-align: center;
+  margin-top: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: white;
+}
+
+.MainContents {
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    margin: 20px;
+    background-color: white;
+}
+
+.contentImage, h6, p {
+  background-color: white;
+}
+
+.MainContents .contentImage {
+    height:200px;
+    margin-top: 5px;
+    margin-left: 10px;
+    
+}
+
+.MainContents h6 {
+    margin-top: 10px;
+    font-size: 30px;
+    white-space: normal;
+    margin-left: 10px;
+}
+
+.MainContents p {
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 25px;
+    width: 400px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+aside { 
+    float: right;
+    width:min-content;
+    padding: 10px;
+    margin-top: 20px;
+    
+}
+
+aside h6 {
+    padding: 10px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-bottom: 0.5px solid black;
+    
+}
+
+.contentImage:hover, p:hover, h6:hover, i:hover {
+    cursor: pointer;
+    text-decoration:underline;
+}
+
+footer {
+    border: 1px solid black;
+    position: relative;
+    top: 10px;
+    padding: 0;
+    margin: 0;
+    
+}    
+
+.container2 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    
+}
+
+.container2 #Socialmedia {
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    color: white;
+    background-color: black;
+    
+}
+
+.list {
+  padding: 20px;
+  background-color: black;
+}
+
+.list .footerLists {
+    list-style: none;
+    text-transform: capitalize;
+    line-height: 50px;
+    color: white;
+    background-color: black;
+}
+
+#Icons {
+  padding: 12px;
+  background-color: black;
+ 
+}
+
+/* for ipad */
+@media only screen and (max-width: 780px) {
+  * {
+    width: 100%;
+    width: -moz-available;          /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    width: fill-available;
+  }
+  .footerLists{
+    color: red;
+    display: flexbox;
+  }
+
+  .MainContents aside {
+      width: auto;
+  } 
+
+  aside h6 {
+      width: 300px;
+      float: left;
+      margin-left: 10px;
+  }
+
+  .MainContents p {
+      width: auto;
+  }
+   
+}
+
+/* for mobile */
+@media only screen and (max-width: 450px) {
+
+  article aside {
+      width: auto;
+      float: right;
+      
+  } 
+
+  article p {
+      width: auto;
+  }
+
+  .MainContents {
+     width: 83%;
+  }
+
+  .container2 {
+    display: block;
+  }
+
+  .footerLists {
+    text-align: center;
+    border: none;
+  }
+ 
+
+}
